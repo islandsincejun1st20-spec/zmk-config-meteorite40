@@ -82,7 +82,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp LA(PG_UP)　LA(PG_DN)>, // LC(MINUS) LC(EQUAL)　RE0: ctrl + - / +,,,　→　EXCEL左右 LA(PG_UP)　LA(PG_DN)
+                <&inc_dec_kp LA(PG_UP) LA(PG_DN)>, // LC(MINUS) LC(EQUAL)　RE0: ctrl + - / +,,,　→　EXCEL左右 LA(PG_UP)　LA(PG_DN)
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>; // RE1: volume down/up
         };
 
@@ -96,7 +96,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp LEFT RIGHT>, // LC(MINUS) LC(EQUAL) RE0: ctrl + - / +,,,　→　カーソル左右 LEFT RIGHT　
+                <&inc_dec_kp LEFT RIGHT>, // LC(MINUS) LC(EQUAL) RE0: ctrl + - / +,,,　→　カーソル左右 LEFT RIGHT
                 <&inc_dec_kp UP DOWN>; // RE1: C_VOL_DN C_VOL_UP volume down/up　→　カーソル上下　UP DOWN
 
         };
