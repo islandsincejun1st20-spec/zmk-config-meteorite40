@@ -82,7 +82,7 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp LC(MINUS) LC(EQUAL)>, // RE0: ctrl + - / +,,,
+                <&inc_dec_kp LA(PG_UP)　LA(PG_DN)>, // LC(MINUS) LC(EQUAL)　RE0: ctrl + - / +,,,　→　EXCEL左右 LA(PG_UP)　LA(PG_DN)
                 <&inc_dec_kp C_VOL_DN C_VOL_UP>; // RE1: volume down/up
         };
 
@@ -96,8 +96,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp LC(MINUS) LC(EQUAL)>, // RE0: ctrl + - / +,,,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>; // RE1: volume down/up
+                <&inc_dec_kp LEFT RIGHT>, // LC(MINUS) LC(EQUAL) RE0: ctrl + - / +,,,　→　カーソル左右 LEFT RIGHT　
+                <&inc_dec_kp UP DOWN>; // RE1: C_VOL_DN C_VOL_UP volume down/up　→　カーソル上下　UP DOWN
 
         };
 
@@ -111,9 +111,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp LC(MINUS) LC(EQUAL)>, // RE0: ctrl + - / +,,,
-                <&inc_dec_kp C_VOL_DN C_VOL_UP>; // RE1: volume down/up
-
+                <&inc_dec_kp LS(LEFT) LS(RIGHT)>, // RE0: ctrl + - / +,,,　→　動画編集１秒送り LS(LEFT) LS(RIGHT)　
+                <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>; // RE1: volume down/up　→　スクロール　C_AC_SCROLL_UP C_AC_SCROLL_DOWN
         };
 
         layer_3 {
@@ -147,3 +146,6 @@
         };
     };
 };
+//エンコーダメモ　レイヤー0　左　EXCEL左右 LA(PG_UP)　LA(PG_DN)　右　ボリューム上下　C_VOL_DN C_VOL_UP>
+//エンコーダメモ　レイヤー1　左　カーソル左右 LEFT RIGHT　右　カーソル上下　UP DOWN
+//エンコーダメモ　レイヤー2　左　動画編集１秒送り LS(LEFT) LS(RIGHT)　右　スクロール　C_AC_SCROLL_UP C_AC_SCROLL_DOWN
