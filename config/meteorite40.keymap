@@ -78,13 +78,11 @@
                 &kp Q        &kp W       &kp E        &kp R        &kp T                                 &kp Y        &kp U       &kp I       &kp O  &kp P
                 &mt LSHIFT A &kp S       &kp D        &kp F        &kp G                                 &kp H        &kp J       &kp K       &kp L  &kp MINUS
                 &mt LCTRL Z        &mt LWIN　X       &kp C        &kp V        &kp B        &mkp MB1     &mkp MB2    &kp N        &kp M       &kp COMMA   &kp DOT  &lt 4 SLASH
-                                    &kp LWIN  &mt LCTRL TAB  &mt LSHIFT SPACE  &lt 1 SPACE  &lt 2 DELETE  &lt 3 ENTER  &kp BSPC  &kp RALT
+                                    &kp LWIN  &kp LCTRL  &mt LSHIFT SPACE  &lt 1 TAB  &lt 2 DELETE  &lt 3 ENTER  &kp BSPC  &kp RALT
             >;
 
             sensor-bindings =
-                // <&inc_dec_kp LA(PG_UP) LA(PG_DN)>, // LC(MINUS) LC(EQUAL)　RE0: ctrl + - / +,,,　→　EXCEL左右 LA(PG_UP)　LA(PG_DN)
                 <&inc_dec_kp LEFT RIGHT>, // カーソル左右 LEFT RIGHT
-                // <&inc_dec_kp C_VOL_DN C_VOL_UP>; // RE1: volume down/up
                 <&inc_dec_kp UP DOWN>; // RE1: カーソル上下　UP DOWN
 
 
